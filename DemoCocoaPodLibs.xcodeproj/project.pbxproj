@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A862E576EB42CACFDDCEF0AD /* Pods_DemoCocoaPodLibs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCAB3EC4E0E5B0EBF5E3364D /* Pods_DemoCocoaPodLibs.framework */; };
 		C3C6088F2386865300EF4196 /* DemoCocoaPodLibs.h in Headers */ = {isa = PBXBuildFile; fileRef = C3C6088D2386865300EF4196 /* DemoCocoaPodLibs.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3C6089623868BAB00EF4196 /* CalculatorTotal.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C6089523868BAB00EF4196 /* CalculatorTotal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DB49B7CD96E2550B2C34857 /* Pods-DemoCocoaPodLibs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCocoaPodLibs.release.xcconfig"; path = "Target Support Files/Pods-DemoCocoaPodLibs/Pods-DemoCocoaPodLibs.release.xcconfig"; sourceTree = "<group>"; };
+		89CAA4A2DCBCD09379997E89 /* Pods-DemoCocoaPodLibs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DemoCocoaPodLibs.debug.xcconfig"; path = "Target Support Files/Pods-DemoCocoaPodLibs/Pods-DemoCocoaPodLibs.debug.xcconfig"; sourceTree = "<group>"; };
 		C3C6088A2386865300EF4196 /* DemoCocoaPodLibs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DemoCocoaPodLibs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C6088D2386865300EF4196 /* DemoCocoaPodLibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoCocoaPodLibs.h; sourceTree = "<group>"; };
 		C3C6088E2386865300EF4196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3C6089523868BAB00EF4196 /* CalculatorTotal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorTotal.swift; sourceTree = "<group>"; };
+		CCAB3EC4E0E5B0EBF5E3364D /* Pods_DemoCocoaPodLibs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoCocoaPodLibs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +27,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A862E576EB42CACFDDCEF0AD /* Pods_DemoCocoaPodLibs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39B5DCFAE3902135DBD431D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89CAA4A2DCBCD09379997E89 /* Pods-DemoCocoaPodLibs.debug.xcconfig */,
+				4DB49B7CD96E2550B2C34857 /* Pods-DemoCocoaPodLibs.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF3FF1A156693119AD3EC05B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCAB3EC4E0E5B0EBF5E3364D /* Pods_DemoCocoaPodLibs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C3C608802386865300EF4196 = {
 			isa = PBXGroup;
 			children = (
 				C3C6088C2386865300EF4196 /* DemoCocoaPodLibs */,
 				C3C6088B2386865300EF4196 /* Products */,
+				39B5DCFAE3902135DBD431D2 /* Pods */,
+				BF3FF1A156693119AD3EC05B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,6 +74,7 @@
 			children = (
 				C3C6088D2386865300EF4196 /* DemoCocoaPodLibs.h */,
 				C3C6088E2386865300EF4196 /* Info.plist */,
+				C3C6089523868BAB00EF4196 /* CalculatorTotal.swift */,
 			);
 			path = DemoCocoaPodLibs;
 			sourceTree = "<group>";
@@ -70,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C3C608922386865300EF4196 /* Build configuration list for PBXNativeTarget "DemoCocoaPodLibs" */;
 			buildPhases = (
+				D9ACA17CF26E7B82A4A5E3B1 /* [CP] Check Pods Manifest.lock */,
 				C3C608852386865300EF4196 /* Headers */,
 				C3C608862386865300EF4196 /* Sources */,
 				C3C608872386865300EF4196 /* Frameworks */,
@@ -95,6 +123,7 @@
 				TargetAttributes = {
 					C3C608892386865300EF4196 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -126,11 +155,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D9ACA17CF26E7B82A4A5E3B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DemoCocoaPodLibs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C3C608862386865300EF4196 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3C6089623868BAB00EF4196 /* CalculatorTotal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +314,9 @@
 		};
 		C3C608932386865300EF4196 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89CAA4A2DCBCD09379997E89 /* Pods-DemoCocoaPodLibs.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -275,6 +332,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.thanhnm.DemoCocoaPodLibs;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -282,7 +340,9 @@
 		};
 		C3C608942386865300EF4196 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB49B7CD96E2550B2C34857 /* Pods-DemoCocoaPodLibs.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
